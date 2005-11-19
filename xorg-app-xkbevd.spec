@@ -1,12 +1,12 @@
 Summary:	xkbevd application
 Summary(pl):	Aplikacja xkbevd
 Name:		xorg-app-xkbevd
-Version:	0.99.1
+Version:	0.99.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/xkbevd-%{version}.tar.bz2
-# Source0-md5:	dbf007d3367d1611b50ced56d53b10c0
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/app/xkbevd-%{version}.tar.bz2
+# Source0-md5:	c243bbe5c4ea60fc3d27da1737e5335c
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
