@@ -1,5 +1,5 @@
 Summary:	xkbevd application
-Summary(pl.UTF-8):   Aplikacja xkbevd
+Summary(pl.UTF-8):	Aplikacja xkbevd
 Name:		xorg-app-xkbevd
 Version:	1.0.2
 Release:	1
