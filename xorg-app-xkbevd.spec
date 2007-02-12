@@ -1,5 +1,5 @@
 Summary:	xkbevd application
-Summary(pl):	Aplikacja xkbevd
+Summary(pl.UTF-8):   Aplikacja xkbevd
 Name:		xorg-app-xkbevd
 Version:	1.0.2
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xkbevd application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xkbevd.
 
 %prep
