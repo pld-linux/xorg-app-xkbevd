@@ -1,25 +1,30 @@
-Summary:	xkbevd application
-Summary(pl.UTF-8):	Aplikacja xkbevd
+Summary:	xkbevd - XKB event daemon
+Summary(pl.UTF-8):	xkbevd - demon zdarzeń XKB
 Name:		xorg-app-xkbevd
-Version:	1.0.2
-Release:	2
+Version:	1.1.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xkbevd-%{version}.tar.bz2
-# Source0-md5:	68f2a143716c23b566f8509d9498f516
+# Source0-md5:	8d3c1485c2dd62ea7395a37377958a39
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libxkbfile-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xkbevd application.
+The xkbevd event daemon listens for specified XKB events and executes
+requested commands if they occur. The configuration file consists of a
+list of event specification/action pairs and/or variable definitions.   
 
 %description -l pl.UTF-8
-Aplikacja xkbevd.
+Demon zdarzeń xkbevd nasłuchuje na określone zdarzenia XKB i w
+przypadku ich wystąpienia wywołuje żądane polecenia. Plik
+konfiguracyjny składa się z par określeń zdarzeń i akcji i/lub
+definicji zmiennych.
 
 %prep
 %setup -q -n xkbevd-%{version}
@@ -44,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/xkbevd
 %{_mandir}/man1/xkbevd.1x*
