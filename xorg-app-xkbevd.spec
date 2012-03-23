@@ -1,12 +1,12 @@
 Summary:	xkbevd - XKB event daemon
 Summary(pl.UTF-8):	xkbevd - demon zdarzeń XKB
 Name:		xorg-app-xkbevd
-Version:	1.1.2
+Version:	1.1.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xkbevd-%{version}.tar.bz2
-# Source0-md5:	d8d0bc5935b4b8f016ed92fd369dd385
+# Source0-md5:	37ed71525c63a9acd42e7cde211dcc5b
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The xkbevd event daemon listens for specified XKB events and executes
 requested commands if they occur. The configuration file consists of a
-list of event specification/action pairs and/or variable definitions.   
+list of event specification/action pairs and/or variable definitions.
 
 %description -l pl.UTF-8
 Demon zdarzeń xkbevd nasłuchuje na określone zdarzenia XKB i w
